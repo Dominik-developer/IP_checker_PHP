@@ -1,9 +1,5 @@
 <?php
 
-// constant variables
-define("PROD", "false");
-
-
 // Function collecting IP address
 function getIPaddress(){
     $ip_address = $_SERVER['REMOTE_ADDR'];
@@ -19,7 +15,7 @@ function getIPaddress(){
 // Function checking IP address in DB
 function IPchecker($ipToCheck = null) {
     if ($ipToCheck === null) {
-        $respond = 'block';
+        $respond = 'error'; // or 'block'
         return $respond;
     } else {
 
