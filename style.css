@@ -1,0 +1,168 @@
+/* MAIN */
+main {
+    display: block;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* HEADER <main> */
+main h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* CONTENT SECTION */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+/* RESPONSIVENESS <main> */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    #content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    main h2 {
+        font-size: 1.6em;
+    }
+
+    #content {
+        padding: 5px;
+    }
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Content section (in <main>) */
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* HTML code is on comment so it it 
+#content .intro {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1);
+}
+
+#content .intro h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+}*/
+
+.main-article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1);
+}
+
+.main-article h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.main-article p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    #content .intro h3, .main-article h3 {
+        font-size: 1.5em;
+    }
+
+    .main-article p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #content .intro h3, .main-article h3 {
+        font-size: 1.3em;
+    }
+
+    .main-article p {
+        font-size: 0.9em;
+    }
+}
+
+/* additional styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
